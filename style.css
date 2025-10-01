@@ -5,6 +5,10 @@
   box-sizing: border-box;
 }
 
+html{
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: Arial, sans-serif;
   background: black;
@@ -13,26 +17,116 @@ body {
 }
 
 /* Navigation */
-nav {
-  background: #111;
-  padding: 1rem;
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+}
+
+.nav-links li {
+  list-style: none;
+}
+
+.nav-links a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #60a5fa; /* light blue */
+}
+
+
+#navbar {
+  background: rgba(10,10,10,0.95);
+  border-bottom: 1px solid #3b82f6;
+  padding: 1rem 20px;
   position: fixed;
   width: 100%;
   top: 0;
   left: 0;
+  z-index: 1000;
 }
 
-nav ul {
-  list-style: none;
+.nav-container{
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo{
+  font-size: 1.4rem;
+  font-weight: bold;
+  color:#60a5fa
+}
+
+/*hero section*/
+.hero{
+  min-height: 100vh;
   display: flex;
   justify-content: center;
-  gap: 1.5rem;
+  align-items:center;
+  text-align: center;
+  padding: 100px 20px 40px;
+  background: linear-gradient(135deg, #0a0a0a, #1e3a8a);
 }
 
-nav a {
-  color: #60a5fa;
+.hero h1{
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.hero .highlight{
+  color:#60a5fa;
+}
+
+.hero-subtitle{
+  font-size: 1.3rem;
+  color: #b0b0b0;
+  margin-bottom: 2rem;
+}
+
+.hero-buttons{
+  display:flex;
+  gap:1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.btn{
+  padding: 12px 28px;
+  border-radius: 6px;
   text-decoration: none;
   font-weight: bold;
+  transition: all 0.3s ease;
+  border: 2px solid transparent;
+}
+
+.btn-primary{
+  background: #2563eb;
+  color: #fff;
+  border-color: #2563eb;
+}
+
+.btn-primary:hover{
+  background: #1e40af;
+  border-color: #1e40af;
+}
+
+.btn-secondary{
+  background: transparent;
+  color: #3b82f6;
+  border: 2px solid #3b82f6;
+}
+
+.btn-secondary:hover{
+  background: #3b82f6;
+  color:#fff;
 }
 
 /* Sections */
