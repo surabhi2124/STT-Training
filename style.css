@@ -191,10 +191,89 @@ a[download] {
   margin-bottom: 10px;
 }
 
-/* Footer */
-footer {
+/* Projects Section */
+.projects-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+  margin-top: 2rem;
+}
+
+.project-card {
   background: #111;
+  padding: 20px;
+  border-radius: 8px;
+  border: 1px solid #2563eb;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 20px rgba(37, 99, 235, 0.4);
+}
+
+.project-card h3 {
+  color: #60a5fa;
+  margin-bottom: 10px;
+}
+
+.project-tag {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 5px 12px;
+  font-size: 0.8rem;
+  background: #2563eb;
+  border-radius: 12px;
+}
+
+/* Certifications Section */
+.certifications-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+  margin-top: 2rem;
+}
+
+.cert-card {
+  background: #111;
+  padding: 20px;
+  border-radius: 8px;
+  border: 1px solid #2563eb;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
   text-align: center;
-  padding: 1rem;
-  color: #aaa;
+}
+
+.cert-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 20px rgba(37, 99, 235, 0.4);
+}
+
+.cert-card h3 {
+  color: #60a5fa;
+  margin-bottom: 8px;
+}
+
+/* Resume Section */
+.resume-preview {
+  background: #111;
+  padding: 30px;
+  border: 1px solid #2563eb;
+  border-radius: 8px;
+  max-width: 500px;
+  margin: 2rem auto;
+}
+
+/* Footer */
+.footer-links {
+  margin-top: 10px;
+}
+
+.footer-links a {
+  margin: 0 10px;
+  color: #60a5fa;
+  text-decoration: none;
+}
+
+.footer-links a:hover {
+  color: #fff;
 }
