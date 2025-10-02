@@ -65,6 +65,24 @@ body {
   color:#60a5fa
 }
 
+/* Active nav link */
+.nav-links a.active {
+  color: #60a5fa;
+  border-bottom: 2px solid #60a5fa;
+}
+
+/* Fade animation */
+.fade {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.fade.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
 /*hero section*/
 .hero{
   min-height: 100vh;
@@ -128,6 +146,18 @@ body {
 .btn-secondary:hover{
   background: #3b82f6;
   color:#fff;
+}
+
+#typed-name {
+  color: #60a5fa;   /* light blue */
+  border-right: 2px solid #60a5fa;
+  padding-right: 5px;
+  animation: blink 0.7s infinite;
+}
+
+@keyframes blink {
+  0%, 50% { border-color: #60a5fa; }
+  51%, 100% { border-color: transparent; }
 }
 
 /* Sections */
