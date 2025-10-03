@@ -9,8 +9,10 @@
 </head>
 <body>
   <!-- Navigation -->
-  <nav>
-    <ul>
+  <nav id="navbar">
+    <div class="nav-container">
+      <div class="logo">Surabhi Sripad rao</div>
+    <ul class="nav-links">
       <li><a href="#home">Home</a></li>
       <li><a href="#about">About</a></li>
       <li><a href="#skills">Skills</a></li>
@@ -18,42 +20,132 @@
       <li><a href="#certifications">Certifications</a></li>
       <li><a href="#resume">Resume</a></li>
     </ul>
+    </div>
   </nav>
 
   <!-- Sections -->
-  <section id="home">
-    <h1>Surabhi Sripadrao</h1>
-    <p>AIML Graduate | Machine Learning Enthusiast</p>
+
+  <section id="home" class="hero">
+    <div class="hero-content">
+    <h1><span id="typed-name"></span></h1>
+    <p class="hero-subtitle">AIML Engineer | Machine Learning Enthusiast</p>
+    <div class="hero-buttons">
+      <a href="#about" class="btn btn-primary">Learn More</a>
+      <a href="#resume" class="btn btn-secondary">Download Resume</a>
+    </div>
+    </div>
   </section>
 
-  <section id="about">
-    <h2>About Me</h2>
-    <p>Short intro here.</p>
-  </section>
+  <section id="about" class="about">
+  <h2>About Me</h2>
+  <div class="about-container">
+    <div class="about-text">
+      <p>Hi, I'm <strong>Surabhi Sripad Rao</strong>, an enthusiastic AIML engineering student with a strong foundation in Python and Data Structures & Algorithms. I’m passionate about exploring AI, Machine Learning, and Front-End technologies.</p>
+    </div>
+  </div>
+</section>
 
-  <section id="skills">
-    <h2>Skills</h2>
-    <p>List of skills goes here.</p>
-  </section>
+<div class="education-container">
+  <div class="edu-item">
+    <div class="edu-point"></div>
+    <div class="edu-card">
+      <h3>Christ Public School</h3>
+      <p>10th Grade – 89.4% (2020)</p>
+    </div>
+  </div>
 
-  <section id="projects">
-    <h2>Projects</h2>
-    <p>Project details go here.</p>
-  </section>
+  <div class="edu-item">
+    <div class="edu-point"></div>
+    <div class="edu-card">
+      <h3>BASE PU College</h3>
+      <p>12th Grade – 87.16% (2022)</p>
+    </div>
+  </div>
 
-  <section id="certifications">
-    <h2>Certifications</h2>
-    <p>Certification details go here.</p>
-  </section>
+  <div class="edu-item">
+    <div class="edu-point"></div>
+    <div class="edu-card">
+      <h3>Vidyavardhaka College of Engineering</h3>
+      <p>B.E. – 9.37 CGPA (2022–2026)</p>
+    </div>
+  </div>
+</div>
 
-  <section id="resume">
-    <h2>Resume</h2>
-    <a href="VVCE_CSE-AIML_SURABHI_SRIPADRAO.pdf" download>Download Resume</a>
-  </section>
 
-  <!-- Footer -->
-  <footer>
-    <p>&copy; 2025 Surabhi Sripadrao</p>
-  </footer>
+<section id="skills" class="skills">
+  <h2>Skills</h2>
+  <div class="skills-container">
+    <div class="skill-category">
+      <h3>Programming</h3>
+      <p>Python, C++, Web Programming (Basic)</p>
+    </div>
+    <div class="skill-category">
+      <h3>Tools & Tech</h3>
+      <p>Git, GitHub, Jenkins, VSCode, Unity, Cloud, DevOps</p>
+    </div>
+    <div class="skill-category">
+      <h3>Soft Skills</h3>
+      <p>Problem Solving, Teamwork, Flexibility</p>
+    </div>
+  </div>
+</section>
+
+
+<section id="projects" class="projects">
+  <h2>Projects</h2>
+  <div class="projects-container">
+    <div class="project-card">
+      <h3>Epileptic Aura Detection</h3>
+      <p>Developed a CNN-LSTM deep learning model to predict epileptic auras in women using EEG signal data, achieving over 90% accuracy in early detection.</p>
+      <span class="project-tag">Deep Learning</span>
+    </div>
+    <div class="project-card">
+      <h3>Epileptic Seizure Detection</h3>
+      <p>Built a KNN-based machine learning model for seizure detection using EEG signals, optimized with hyperparameter tuning to reach 93% accuracy.</p>
+      <span class="project-tag">Machine Learning</span>
+    </div>
+    <div class="project-card">
+      <h3>EDSPIRE AR App</h3>
+      <p>Developed AR applications with Unity including facial recognition filters and interactive object identification features.</p>
+      <span class="project-tag">Augmented Reality</span>
+    </div>
+  </div>
+</section>
+
+<section id="certifications" class="certifications">
+  <h2>Certifications</h2>
+  <div class="certifications-container">
+    <div class="cert-card">
+      <h3>EDSPIRE AR Development</h3>
+      <p>Practical experience in building AR interactive apps using Unity (Oct 2024).</p>
+    </div>
+    <div class="cert-card">
+      <h3>IBM AI Fundamentals</h3>
+      <p>Internship in AI, chatbot building & prompt engineering (Aug 2024).</p>
+    </div>
+    <div class="cert-card">
+      <h3>Foundations for XR Development</h3>
+      <p>Hands-on XR development with Unity (Feb 2024).</p>
+    </div>
+  </div>
+</section>
+
+<section id="resume" class="resume">
+  <h2>Resume</h2>
+  <div class="resume-preview">
+    <p>Click below to download my resume:</p>
+    <a href="VVCE_CSE-AIML_SURABHI_SRIPADRAO.pdf" download class="btn btn-primary">Download Resume</a>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer>
+  <p>&copy; 2025 Surabhi Sripadrao</p>
+  <div class="footer-links">
+    <a href="https://linkedin.com/in/surabhi-sripad-rao" target="_blank">LinkedIn</a>
+    <a href="https://github.com/" target="_blank">GitHub</a>
+  </div>
+</footer>
+<script src="script.js"></script>
 </body>
 </html>
