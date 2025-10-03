@@ -35,7 +35,7 @@ body {
 }
 
 .nav-links a:hover {
-  color: #60a5fa; /* light blue */
+  color: #60a5fa;
 }
 
 
@@ -149,7 +149,7 @@ body {
 }
 
 #typed-name {
-  color: #60a5fa;   /* light blue */
+  color: #60a5fa;
   border-right: 2px solid #60a5fa;
   padding-right: 5px;
   animation: blink 0.7s infinite;
@@ -206,11 +206,11 @@ a[download] {
     padding: 100px 0;
 }
 
-/* Horizontal line - No change needed here */
+/* Horizontal line */
 .education-container::before {
     content: '';
     position: absolute;
-    top: 60px; /* line Y-position */
+    top: 60px; 
     left: 0;
     width: 100%;
     height: 4px;
@@ -218,29 +218,23 @@ a[download] {
     z-index: 1;
 }
 
-/* Each stop (card + point wrapper) */
 .edu-item {
-    /* *** MODIFIED: Removed position: relative; *** */
     text-align: center;
     width: 250px;
-    /* Removed z-index to simplify */
 }
 
-/* Point should be relative to the timeline line */
 .edu-point {
     width: 20px;
     height: 20px;
     background: #2196f3;
     border-radius: 50%;
     position: absolute;
-    top: 50px; /* *** MODIFIED: Adjusted to be 10px above the line (60px - 10px (half height)) *** */
-    /* *** MODIFIED: Reference the center of the education-container directly by calculating the position from the start of the container. *** */
-    transform: translateX(-50%); /* Center horizontally relative to its calculated position */
+    top: 50px;
+    transform: translateX(-50%); 
     border: 3px solid #000;
     z-index: 3;
 }
 
-/* Since edu-item is in a flex container, we can use the following to position the point inside the container */
 .education-container .edu-item:nth-child(1) .edu-point {
     left: 12.5%; /* Approximate positioning for first point */
 }
@@ -253,12 +247,12 @@ a[download] {
     left: 87.5%; /* Approximate positioning for third point */
 }
 
-/* Card placed under the point - No change needed here */
+/* Card placed under the point */
 .edu-card {
     background: #111;
     padding: 15px 20px;
     border-radius: 12px;
-    margin-top: 50px; /* space below the line */
+    margin-top: 50px; 
     box-shadow: 0 0 12px rgba(33, 150, 243, 0.5);
 }
 
